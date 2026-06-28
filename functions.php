@@ -24,7 +24,7 @@ function mononchorcha_theme_setup() {
 
 }
 add_action( 'after_setup_theme', 'mononchorcha_theme_setup' );
-functions.php
+
 // Register Navigation Menu
 function mononchorcha_register_menus() {
     register_nav_menus(
