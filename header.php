@@ -22,3 +22,21 @@ wp_nav_menu(
 );
 ?>
 </nav>
+<header class="site-header">
+    <div class="container">
+        <h1 class="site-title">
+            <a href="<?php echo esc_url( home_url('/') ); ?>">
+                <?php bloginfo('name'); ?>
+            </a>
+        </h1>
+
+        <?php
+        wp_nav_menu(
+            array(
+                'theme_location' => 'primary',
+                'container'      => false,
+            )
+        );
+        ?>
+    </div>
+</header>
