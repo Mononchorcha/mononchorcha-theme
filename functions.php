@@ -34,3 +34,12 @@ function mononchorcha_register_menus() {
     );
 }
 add_action('after_setup_theme', 'mononchorcha_register_menus');
+// Register Navigation Menu
+function mononchorcha_register_menus() {
+    register_nav_menus(
+        array(
+            'primary' => __( 'Primary Menu', 'mononchorcha' ),
+        )
+    );
+}
+add_action( 'after_setup_theme', 'mononchorcha_register_menus' );
